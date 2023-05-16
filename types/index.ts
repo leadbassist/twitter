@@ -1,3 +1,5 @@
+import { EvilIcons } from "@expo/vector-icons";
+
 export type User = {
     id: number;
     name: string;
@@ -20,3 +22,8 @@ export type User = {
   export type TweetProps = {
     tweet: TweetType;
   };
+
+  export type IconButtonProps = {
+    icon: React.ComponentProps<typeof EvilIcons>['name'];
+    text?: string | number;
+  }
